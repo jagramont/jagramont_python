@@ -5,21 +5,23 @@ This is my Git for my python course 2023
 
 # Course project in progress:
 
-The script: is the file named ppk_biofilm-quant.ipynb (jupyter notebook)
+The script, named "ppk_biofilm-quant.ipynb," is a Jupyter notebook that requires a specific conda environment provided in the repository, named 'environment_jorge.yml' (python_test), to run successfully.
 
-To runn the Jupyter notebook is necesary to use the conda environment provided in the current respository called 'environment_jorge.yml' (python_test).
+This script is designed for analyzing data from a .csv file containing absorbance values. These values represent measurements of biofilm production in a system of 96-well plates. The biofilm production data spans across five days.
 
-The script is designed to read a .csv file that contains Absorvance values. The values are measurements of biofilm production in a system of 96 well plates.
+For the experiment, each culture treatment, which encompasses all possible combinations of PPK members (8 possible combinations), has at least 8 technical replicates.
 
-Biofilm production was quantified along five days.
+The script's capabilities include reading the data from the .csv file and creating line plots to explore the biofilm production of each culture treatment over the course of five days.
 
-Each culture treatment (all possible combinations of each member of PPK: 8 possible combinations) has at least 8 technical replicates.
+Additionally, the script allows you to perform data analysis at any timepoint of the assay. The analysis involves checking the data distribution and selecting the most suitable statistical test: one-way ANOVA for normally distributed data or the Kruskal-Wallis test for non-normally distributed data.
 
-The script can read the data of the .csv file and make a line plot to explore the biofilm production of each culture treatment along five days.
+Following the initial statistical test, the script offers post hoc analysis options: Tukey test if the data was analyzed using one-way ANOVA or Dunn test if the data was analyzed by the Kruskal-Wallis test.
 
-The script can analyze the biofilm production at any timepoint of the assay. The analysis consist on checking the distribution of the data, determine the most adecuated statistical tool to use: one-way anova for normally distributed data and Kruskal-Wallis test for non-normally distributed data.
+After conducting the statistical analysis, the script can generate heatmaps for the comparison matrices derived from the post hoc analysis. These heatmaps provide a visual representation of statistically significant differences among the treatments.
 
-After using one of the previus tests, the script can perform a pos hoc analysis: Tukey test if the data was analysed using one-way anova or Dunn test if the data was analyzed by Kruskal-Wallis test.
+Finally, the script produces box plots that display the mean and standard deviation for each treatment per day.
+
+In summary, this versatile script allows you to explore, analyze, and visualize biofilm production data, making it a valuable tool for experimental data analysis.
 
 After the statistical analysis it is possible to generate heatmaps for the comparation matrixes of the post hoc analysis to help you visualize the statistically significant differences among the treatments.
 

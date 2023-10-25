@@ -5,7 +5,12 @@ This is my Git for my python course 2023
 
 # Course project in progress:
 
-The script, named `ppk_biofilm-quant.ipynb` is a Jupyter notebook that requires a specific conda environment provided in the repository, named `environment_jorge.yaml` (my environment is called `python_test`), to run successfully. Use `conda env create -f environment_jorge.yaml` for installing my `python_test` environment.
+The script, named `ppk_biofilm-quant.ipynb` is a Jupyter notebook that requires a specific conda environment provided in the repository.
+
+This script should be runned with the conda environment `environment_jorge.yaml` provided in this github repository, the environment name is : `python_test`.
+So you can run: `conda create --name python_test --file environment_jorge.yaml` on the terminal and then activate `python_test`.
+
+Finally use that environment as a kernel for running this notebook.
 
 
 This script is designed for analyzing data from a .csv file containing absorbance values. These values represent measurements of biofilm production in a system of 96-well plates. The biofilm production data spans across five days.
